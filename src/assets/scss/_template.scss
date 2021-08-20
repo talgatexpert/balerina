@@ -1,7 +1,6 @@
 html,
 body {
     font-family: $font;
-    overflow: auto;
     &::-webkit-scrollbar {
         display: none;
     }
@@ -34,7 +33,6 @@ button {
 img {
     width: 100%;
     height: auto;
-    display: block;
 }
 h1,
 h2,
@@ -98,10 +96,3 @@ button {
 .svg-icon {
     fill: $blue;
 }
-
-.container{
-    max-width: 1315px;
-}
-
-
-
