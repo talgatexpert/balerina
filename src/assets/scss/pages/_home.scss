@@ -1,20 +1,18 @@
 .wrapper{
-    background-image: url(/assets/images/wrapper__bg.png);
-    display: flex;
-    z-index: -2;
-    height: 650px;
-    margin-top: -150px;
+    // background-image: url(/assets/images/wrapper__bg.png);
+    // display: flex;
+    // z-index: -2;
+    // height: 650px;
+    // margin-top: -150px;
     .container{
         position: relative;
     }
     .wrapper__name{
         width: 490px;
         margin-top: 440px;
-        font-family: Bebas Neue;
-        span{
-            font-family: Alexandra Zeferino One;
-        }
+
     }
+
     .wrapper__video{
         width: 720px;
         background-size: cover;
@@ -24,17 +22,28 @@
         right: -30px;
     }
 }
+.school-name{
+    font-family: $font-alexandra;
+    font-size: 120px;
+    line-height: 158px;
+    color: #083E5E;
+    font-weight: 400;
+}
+.home-video{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 660px;
+    width: 720px;
+}
 .adress{
     display: flex;
-    margin-top: 100px;
-    .row{
-        justify-content: space-between;
+    margin-top: 200px;
+
         .adress__card{
-            width: 400px;
             padding: 25px;
             -webkit-box-shadow: 0px 0px 15px 4px #62D1FD; 
             box-shadow: 0px 0px 15px 4px rgba(98, 209, 253, 0.15);
-            margin: 0 10px;
             position: relative;
             .adress__card_h3{
                 font-weight: bold;
@@ -42,6 +51,7 @@
                 line-height: 34px;
                 text-transform: uppercase;
                 color: #083E5E;
+                
             }
             .adress__card_p{
                 margin-top: 10px;
@@ -59,6 +69,7 @@
                 line-height: 20px;
                 color: #083E5E;
                 vertical-align: middle;
+                font-family: $font-helvetica;
                 img{
                     
                     height: 20px;
@@ -75,8 +86,7 @@
                 height: 100px;
             }
         }
-    
-    }
+
 }
 
 .about-content{
@@ -93,20 +103,25 @@
     .about-content__text{
         width: 650px;
         margin-left: 130px;
+        margin-top: 50px;
 
         h1{
-            font-family: Bebas Neue;
             font-style: normal;
-            font-weight: bold;
+            font-weight: 700;
             font-size: 80px;
             line-height: 80px;
             text-transform: uppercase;
             color: #083E5E;
         }
+        p{
+            font-family:$font-helvetica;
+            font-weight: 300;
+        }
         .about-more__link{
+            font-family:$font-helvetica;
             margin-top: 65px;
             display: flex;
-            font-weight: normal;
+            font-weight: 400;
             font-size: 14px;
             line-height: 20px;
             color: #083E5E;
@@ -122,17 +137,57 @@
     }
 }
 .choreographer .container{
-    box-shadow: $box-shadow;
+    // box-shadow: $box-shadow;
 }
 .choreographer-content{
-    display: flex;
     margin-top: 160px;
+
+
+    .choreographer-content__photo{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .choreographer-content__photo_img{
+        width: 266px;
+        height: 260px;
+        position: relative;
+        img{
+            object-fit: cover;
+            width: 266px;
+            height: 260px;
+        }
+        div{
+            transition: all ease 0.5s;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(180deg, rgba(98, 209, 253, 0.3) 0%, rgba(98, 209, 253, 0.74) 100%);
+            p{
+                position: absolute;
+                color: #fff;
+                font-size: 22px;
+                line-height: 26px;
+                text-transform: uppercase;
+                font-weight: 400;
+                left: 20px;
+                bottom: 0px;
+            }
+            opacity: 0;
+            &:hover{
+                opacity: 1;
+            }
+        }
+          
+        }
     .choreographer-content__info{
-        width: 500px;
         background-color: #88BACD ;
         background-position: top left;
-        padding: 30px 30px 100px;
-        height: 520px;
+        padding: 30px 30px 0;
+        // height: 100%;
+        width: 58%;
         .choreographer-content__info_number{
             color: #88BACD;
             font-weight: bold;
@@ -153,6 +208,7 @@
             color: #FFFFFF;
             font-size: 14px;
             line-height: 20px;
+            font-family: $font-helvetica;
             img{
             
                 height: 20px;
@@ -199,7 +255,6 @@
 }
 
 .choreographer-more{
-    margin-top: 68px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -207,8 +262,7 @@
     box-shadow: $box-shadow;
     padding: 34px;
     h3{
-
-        font-family: Bebas Neue;
+        font-weight: 400;
         font-size: 34px;
         line-height: 41px;
         text-transform: uppercase;
@@ -217,17 +271,21 @@
     .choreographer-more__input{
         display: flex;
         justify-content: center;
+
         input{
             width: 360px;
-            font-style: 14px;
+            font-size: 14px;
             padding: 18px 20px;
             border: 1px solid #88BACD;
             box-sizing: border-box;
             border-radius: 10px;
             margin: 10px;
+            font-family: $font-rubik;
+            font-weight: 300;
         }
     }
     button{
+        font-family: $font-helvetica;
         margin: 30px auto;
         width: 170px;
         padding: 10px 20px;
@@ -272,8 +330,11 @@
                     font-size: 34px;
                     line-height: 41px;
                     text-transform: uppercase;
+                    font-weight: 400;
                 }
                 a{
+                    font-family: $font-helvetica;
+                    font-weight: 400;
                     margin-top: 50px;
                     color: #FFFFFF;
                     font-size: 14px;
@@ -294,13 +355,13 @@
 
 .contact{
     margin-top: 150px;
-    
+    font-family: $font-helvetica;
+    font-weight: 300;
     li{
         border-bottom: 1px solid rgba(43, 43, 43, 0.05);
     }
     .contact-content__info{
         box-shadow: $box-shadow;
-        width: 389px;
         .contact-content__info_head{
             padding: 30px;
             font-size: 34px;
@@ -334,9 +395,14 @@
                     margin-right: 14px;
                 }
             }
+            .contact-content__info_tel{
+                font-weight: 400;
+            }
+            .contact-content__info_wh{
+                margin-left: 40px;
+            }
         }
     }
     .contact-content_map{
-        width: 890px;
     }
 }

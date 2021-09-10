@@ -33,119 +33,81 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/libs.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title></title>
+    <title>Главная страница</title>
 </head>
 
 <body>
 
-    <header class="header">
-        <div class="container">
-            <div class="row header__menu">
-                <img class="header__logo" src="/assets/images/logo.png" alt="" class="header__logo">
-                <div class="header__nav-bar">
-                    <ul>
-                        <li><a href="http://localhost:3000/">Главная</a></li>
-                        <li><a href="http://localhost:3000/timetable.html">Расписание</a></li>
-                        <li><a href="http://localhost:3000/about.html">О школе</a></li>
-                        <li><a href="">Услуги</a></li>
-                        <li><a href="">Контакты</a></li>
-                        <li><a href="">Галерея</a></li>
-                    </ul>
-                    <div class="header__sotial">
-                        <a href="#"><img src="/assets/images/header__insta.svg" alt="Instagram"></a>
-                        <a href="#"><img src="/assets/images/header__vk.svg" alt="VK"></a>
+    <header class="position-relative">
+        <div class="header">
+            <div class="container">
+                <div class="header-menu">
+
+                    <a href="/" class="header-logo__link"><img class="header__logo" src="/assets/images/logo.png" alt="" class="header__logo">
+                    </a>
+
+
+                    <div class="header-menu__wrapper">
+                        <div class="header__nav-bar">
+                            <ul>
+                                <li><a href="/">Главная</a></li>
+                                <li><a href="/timetable.html">Расписание</a></li>
+                                <li><a href="/about.html">О школе</a></li>
+                                <li><a href="/choreographer.html">Хореографы</a></li>
+                                <li><a href="">Контакты</a></li>
+                                <li><a href="">Галерея</a></li>
+                            </ul>
+                            <div class="header__sotial">
+                                <a href="#"><img src="/assets/images/header__insta.svg" alt="Instagram"></a>
+                                <a href="#"><img src="/assets/images/header__vk.svg" alt="VK"></a>
+                            </div>
+                        </div>
+                        <div class="navigation">
+                            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+                            <label for="navi-toggle" class="navigation__button">
+                                <span class="navigation__icon">&nbsp;</span>
+                            </label>
+
+                            <div class="navigation__background">&nbsp;</div>
+
+                            <nav class="navigation__nav">
+                                <ul class="navigation__list">
+                                    <li class="navigation__item"><a href="#link__header" class="navigation__link">Home</a></li>
+                                    <li class="navigation__item"><a href="#link__project" class="navigation__link">Project</a></li>
+                                    <li class="navigation__item"><a href="#link__about" class="navigation__link">About</a></li>
+                                    <li class="navigation__item"><a href="#link__contact" class="navigation__link">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
-                </div>
-                <div class="navigation">
-                    <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
-                    <label for="navi-toggle" class="navigation__button">
-                        <span class="navigation__icon">&nbsp;</span>
-                    </label>
-
-                    <div class="navigation__background">&nbsp;</div>
-
-                    <nav class="navigation__nav">
-                        <ul class="navigation__list">
-                            <li class="navigation__item"><a href="#link__header" class="navigation__link">Home</a></li>
-                            <li class="navigation__item"><a href="#link__project" class="navigation__link">Project</a></li>
-                            <li class="navigation__item"><a href="#link__about" class="navigation__link">About</a></li>
-                            <li class="navigation__item"><a href="#link__contact" class="navigation__link">Contact</a></li>
-                        </ul>
-                    </nav>
                 </div>
             </div>
         </div>
     </header>
 
+
     <section class="choreographer">
-        <div class="container">
+        <div class="container choreographer-container">
             <div class="choreographer-gallery">
                 <h2>Хореографы</h2>
                 <div class="row">
-                    <div class="choreographer-card col-12 col-lg-4">
-                        <img src="/assets/images/choreographer-img.png" alt="">
-                        <h3>Батукова Мария Игоревна</h3>
-                        <a href="#" class="adress__card_link">
-                            Подробнее о хореографе <img src="/assets/images/one.svg" alt="">
-                        </a>
+                    <div class="choreographer-card__column  col-12 col-md-3 col-lg-4">
+
+                        <div class="choreographer-card">
+                            <div class="choreographer-card__img">
+                                <img src="/assets/images/choreographer-img.png" alt="">
+
+                            </div>
+                            <h3>Батукова Мария Игоревна</h3>
+                            <a href="#" class="choreographer-card__link">
+                                Подробнее о хореографе <img src="/assets/images/one.svg" alt="">
+                            </a>
+                        </div>
                     </div>
-                    <div class="choreographer-card col-12 col-lg-4">
-                        <img src="/assets/images/choreographer-img.png" alt="">
-                        <h3>Батукова Мария Игоревна</h3>
-                        <a href="#" class="adress__card_link">
-                            Подробнее о хореографе <img src="/assets/images/one.svg" alt="">
-                        </a>
-                    </div>
-                    <div class="choreographer-card col-12 col-lg-4">
-                        <img src="/assets/images/choreographer-img.png" alt="">
-                        <h3>Батукова Мария Игоревна</h3>
-                        <a href="#" class="adress__card_link">
-                            Подробнее о хореографе <img src="/assets/images/one.svg" alt="">
-                        </a>
-                    </div>
-                    <div class="choreographer-card col-12 col-lg-4">
-                        <img src="/assets/images/choreographer-img.png" alt="">
-                        <h3>Батукова Мария Игоревна</h3>
-                        <a href="#" class="adress__card_link">
-                            Подробнее о хореографе <img src="/assets/images/one.svg" alt="">
-                        </a>
-                    </div>
-                    <div class="choreographer-card col-12 col-lg-4">
-                        <img src="/assets/images/choreographer-img.png" alt="">
-                        <h3>Батукова Мария Игоревна</h3>
-                        <a href="#" class="adress__card_link">
-                            Подробнее о хореографе <img src="/assets/images/one.svg" alt="">
-                        </a>
-                    </div>
-                    <div class="choreographer-card col-12 col-lg-4">
-                        <img src="/assets/images/choreographer-img.png" alt="">
-                        <h3>Батукова Мария Игоревна</h3>
-                        <a href="#" class="adress__card_link">
-                            Подробнее о хореографе <img src="/assets/images/one.svg" alt="">
-                        </a>
-                    </div>
-                    <div class="choreographer-card col-12 col-lg-4">
-                        <img src="/assets/images/choreographer-img.png" alt="">
-                        <h3>Батукова Мария Игоревна</h3>
-                        <a href="#" class="adress__card_link">
-                            Подробнее о хореографе <img src="/assets/images/one.svg" alt="">
-                        </a>
-                    </div>
-                    <div class="choreographer-card col-12 col-lg-4">
-                        <img src="/assets/images/choreographer-img.png" alt="">
-                        <h3>Батукова Мария Игоревна</h3>
-                        <a href="#" class="adress__card_link">
-                            Подробнее о хореографе <img src="/assets/images/one.svg" alt="">
-                        </a>
-                    </div>
-                    <div class="choreographer-card col-12 col-lg-4">
-                        <img src="/assets/images/choreographer-img.png" alt="">
-                        <h3>Батукова Мария Игоревна</h3>
-                        <a href="#" class="adress__card_link">
-                            Подробнее о хореографе <img src="/assets/images/one.svg" alt="">
-                        </a>
-                    </div>
+
+
                 </div>
             </div>
         </div>
@@ -206,9 +168,9 @@
                 <img class="footer-content__logo" src="/assets/images/logo.png" alt="Логотип">
                 <div class="row footer-content__menu col-xl-8 col-12">
                     <a class="col-4 col-lg-2" href="http://localhost:3000/">Главная</a>
-                    <a class="col-4 col-lg-2" href="http://localhost:3000/timetable.html">Расписание</a>
-                    <a class="col-4 col-lg-2" href="http://localhost:3000/about.html">О школе</a>
-                    <a class="col-4 col-lg-2" href="#">Услуги</a>
+                    <a class="col-4 col-lg-2" href="/timetable.html">Расписание</a>
+                    <a class="col-4 col-lg-2" href="/about.html">О школе</a>
+                    <a class="col-4 col-lg-2" href="/choreographer.html">Хореографы</a>
                     <a class="col-4 col-lg-2" href="#">Контакты</a>
                     <a class="col-4 col-lg-2" href="#">Галерея</a>
                 </div>

@@ -38,41 +38,50 @@
 
 <body>
 
-    <header class="header">
-        <div class="container">
-            <div class="row header__menu">
-                <img class="header__logo" src="/assets/images/logo.png" alt="" class="header__logo">
-                <div class="header__nav-bar">
-                    <ul>
-                        <li><a href="http://localhost:3000/">Главная</a></li>
-                        <li><a href="http://localhost:3000/timetable.html">Расписание</a></li>
-                        <li><a href="http://localhost:3000/about.html">О школе</a></li>
-                        <li><a href="">Услуги</a></li>
-                        <li><a href="">Контакты</a></li>
-                        <li><a href="">Галерея</a></li>
-                    </ul>
-                    <div class="header__sotial">
-                        <a href="#"><img src="/assets/images/header__insta.svg" alt="Instagram"></a>
-                        <a href="#"><img src="/assets/images/header__vk.svg" alt="VK"></a>
+    <header class="position-relative">
+        <div class="header">
+            <div class="container">
+                <div class="header-menu">
+
+                    <a href="/" class="header-logo__link"><img class="header__logo" src="/assets/images/logo.png" alt="" class="header__logo">
+                    </a>
+
+
+                    <div class="header-menu__wrapper">
+                        <div class="header__nav-bar">
+                            <ul>
+                                <li><a href="/">Главная</a></li>
+                                <li><a href="/timetable.html">Расписание</a></li>
+                                <li><a href="/about.html">О школе</a></li>
+                                <li><a href="/choreographer.html">Хореографы</a></li>
+                                <li><a href="">Контакты</a></li>
+                                <li><a href="">Галерея</a></li>
+                            </ul>
+                            <div class="header__sotial">
+                                <a href="#"><img src="/assets/images/header__insta.svg" alt="Instagram"></a>
+                                <a href="#"><img src="/assets/images/header__vk.svg" alt="VK"></a>
+                            </div>
+                        </div>
+                        <div class="navigation">
+                            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+                            <label for="navi-toggle" class="navigation__button">
+                                <span class="navigation__icon">&nbsp;</span>
+                            </label>
+
+                            <div class="navigation__background">&nbsp;</div>
+
+                            <nav class="navigation__nav">
+                                <ul class="navigation__list">
+                                    <li class="navigation__item"><a href="#link__header" class="navigation__link">Home</a></li>
+                                    <li class="navigation__item"><a href="#link__project" class="navigation__link">Project</a></li>
+                                    <li class="navigation__item"><a href="#link__about" class="navigation__link">About</a></li>
+                                    <li class="navigation__item"><a href="#link__contact" class="navigation__link">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
-                </div>
-                <div class="navigation">
-                    <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
-                    <label for="navi-toggle" class="navigation__button">
-                        <span class="navigation__icon">&nbsp;</span>
-                    </label>
-
-                    <div class="navigation__background">&nbsp;</div>
-
-                    <nav class="navigation__nav">
-                        <ul class="navigation__list">
-                            <li class="navigation__item"><a href="#link__header" class="navigation__link">Home</a></li>
-                            <li class="navigation__item"><a href="#link__project" class="navigation__link">Project</a></li>
-                            <li class="navigation__item"><a href="#link__about" class="navigation__link">About</a></li>
-                            <li class="navigation__item"><a href="#link__contact" class="navigation__link">Contact</a></li>
-                        </ul>
-                    </nav>
                 </div>
             </div>
         </div>
@@ -169,7 +178,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="prim">
+                        <td class="individual">
                             <p class="time">09:00</p>
                             <p class="type">гр."Примы" - 10-14 лет</p>
                         </td>
@@ -177,7 +186,7 @@
                             <p class="time">09:00</p>
                             <p class="type">Индивидуальные занятия</p>
                         </td>
-                        <td class="prim">
+                        <td class="individual">
                             <p class="time">09:00</p>
                             <p class="type">гр."Примы" - 10-14 лет</p>
                         </td>
@@ -185,17 +194,17 @@
                             <p class="time">09:00</p>
                             <p class="type">Индивидуальные занятия</p>
                         </td>
-                        <td class="prim">
+                        <td class="individual">
                             <p class="time">09:00</p>
                             <p class="type">гр."Примы" - 10-14 лет </p>
                         </td>
-                        <td class="individual">
+                        <td class="other">
                             <p class="time">09:00</p>
                             <p class="type">Индивидуальные занятия</p>
                         </td>
                     </tr>
                     <tr>
-                        <td class="prim">
+                        <td class="individual">
                             <p class="time">09:00</p>
                             <p class="type">гр."Примы" - 10-14 лет</p>
                         </td>
@@ -203,7 +212,7 @@
                             <p class="time">09:00</p>
                             <p class="type">Индивидуальные занятия</p>
                         </td>
-                        <td class="prim">
+                        <td class="individual">
                             <p class="time">09:00</p>
                             <p class="type">гр."Примы" - 10-14 лет</p>
                         </td>
@@ -211,17 +220,17 @@
                             <p class="time">09:00</p>
                             <p class="type">Индивидуальные занятия</p>
                         </td>
-                        <td class="prim">
+                        <td class="individual">
                             <p class="time">09:00</p>
                             <p class="type">гр."Примы" - 10-14 лет </p>
                         </td>
-                        <td class="individual">
+                        <td class="other">
                             <p class="time">09:00</p>
                             <p class="type">Индивидуальные занятия</p>
                         </td>
                     </tr>
                     <tr>
-                        <td class="prim">
+                        <td class="individual">
                             <p class="time">09:00</p>
                             <p class="type">гр."Примы" - 10-14 лет</p>
                         </td>
@@ -229,7 +238,7 @@
                             <p class="time">09:00</p>
                             <p class="type">Индивидуальные занятия</p>
                         </td>
-                        <td class="prim">
+                        <td class="individual">
                             <p class="time">09:00</p>
                             <p class="type">гр."Примы" - 10-14 лет</p>
                         </td>
@@ -237,11 +246,11 @@
                             <p class="time">09:00</p>
                             <p class="type">Индивидуальные занятия</p>
                         </td>
-                        <td class="prim">
+                        <td class="individual">
                             <p class="time">09:00</p>
                             <p class="type">гр."Примы" - 10-14 лет </p>
                         </td>
-                        <td class="individual">
+                        <td class="other">
                             <p class="time">09:00</p>
                             <p class="type">Индивидуальные занятия</p>
                         </td>
@@ -281,7 +290,7 @@
                             <p class="time">09:00</p>
                             <p class="type">Индивидуальные занятия</p>
                         </td>
-                        <td class="individual">
+                        <td class="prim">
                             <p class="time">09:00</p>
                             <p class="type">Индивидуальные занятия</p>
                         </td>
@@ -289,33 +298,7 @@
                             <p class="time">09:00</p>
                             <p class="type">Индивидуальные занятия</p>
                         </td>
-                        <td class="individual">
-                            <p class="time">09:00</p>
-                            <p class="type">Индивидуальные занятия</p>
-                        </td>
-                        <td class="individual">
-                            <p class="time">09:00</p>
-                            <p class="type">Индивидуальные занятия</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="individual">
-                            <p class="time">09:00</p>
-                            <p class="type">Индивидуальные занятия</p>
-                        </td>
-                        <td class="individual">
-                            <p class="time">09:00</p>
-                            <p class="type">Индивидуальные занятия</p>
-                        </td>
-                        <td class="individual">
-                            <p class="time">09:00</p>
-                            <p class="type">Индивидуальные занятия</p>
-                        </td>
-                        <td class="individual">
-                            <p class="time">09:00</p>
-                            <p class="type">Индивидуальные занятия</p>
-                        </td>
-                        <td class="individual">
+                        <td class="prim">
                             <p class="time">09:00</p>
                             <p class="type">Индивидуальные занятия</p>
                         </td>
@@ -325,23 +308,23 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="individual">
+                        <td class="prim">
                             <p class="time">09:00</p>
                             <p class="type">Индивидуальные занятия</p>
                         </td>
-                        <td class="individual">
+                        <td class="other">
                             <p class="time">09:00</p>
                             <p class="type">Индивидуальные занятия</p>
                         </td>
-                        <td class="individual">
+                        <td class="prim">
                             <p class="time">09:00</p>
                             <p class="type">Индивидуальные занятия</p>
                         </td>
-                        <td class="individual">
+                        <td class="other">
                             <p class="time">09:00</p>
                             <p class="type">Индивидуальные занятия</p>
                         </td>
-                        <td class="individual">
+                        <td class="prim">
                             <p class="time">09:00</p>
                             <p class="type">Индивидуальные занятия</p>
                         </td>
@@ -351,7 +334,23 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="individual">
+                        <td class="prim">
+                            <p class="time">09:00</p>
+                            <p class="type">Индивидуальные занятия</p>
+                        </td>
+                        <td class="other">
+                            <p class="time">09:00</p>
+                            <p class="type">Индивидуальные занятия</p>
+                        </td>
+                        <td class="prim">
+                            <p class="time">09:00</p>
+                            <p class="type">Индивидуальные занятия</p>
+                        </td>
+                        <td class="other">
+                            <p class="time">09:00</p>
+                            <p class="type">Индивидуальные занятия</p>
+                        </td>
+                        <td class="prim">
                             <p class="time">09:00</p>
                             <p class="type">Индивидуальные занятия</p>
                         </td>
@@ -359,15 +358,25 @@
                             <p class="time">09:00</p>
                             <p class="type">Индивидуальные занятия</p>
                         </td>
-                        <td class="individual">
+                    </tr>
+                    <tr>
+                        <td class="prim">
                             <p class="time">09:00</p>
                             <p class="type">Индивидуальные занятия</p>
                         </td>
-                        <td class="individual">
+                        <td class="other">
                             <p class="time">09:00</p>
                             <p class="type">Индивидуальные занятия</p>
                         </td>
-                        <td class="individual">
+                        <td class="prim">
+                            <p class="time">09:00</p>
+                            <p class="type">Индивидуальные занятия</p>
+                        </td>
+                        <td class="other">
+                            <p class="time">09:00</p>
+                            <p class="type">Индивидуальные занятия</p>
+                        </td>
+                        <td class="prim">
                             <p class="time">09:00</p>
                             <p class="type">Индивидуальные занятия</p>
                         </td>
@@ -449,9 +458,9 @@
                 <img class="footer-content__logo" src="/assets/images/logo.png" alt="Логотип">
                 <div class="row footer-content__menu col-xl-8 col-12">
                     <a class="col-4 col-lg-2" href="http://localhost:3000/">Главная</a>
-                    <a class="col-4 col-lg-2" href="http://localhost:3000/timetable.html">Расписание</a>
-                    <a class="col-4 col-lg-2" href="http://localhost:3000/about.html">О школе</a>
-                    <a class="col-4 col-lg-2" href="#">Услуги</a>
+                    <a class="col-4 col-lg-2" href="/timetable.html">Расписание</a>
+                    <a class="col-4 col-lg-2" href="/about.html">О школе</a>
+                    <a class="col-4 col-lg-2" href="/choreographer.html">Хореографы</a>
                     <a class="col-4 col-lg-2" href="#">Контакты</a>
                     <a class="col-4 col-lg-2" href="#">Галерея</a>
                 </div>

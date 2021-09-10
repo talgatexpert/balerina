@@ -1,26 +1,44 @@
 .header{
-    display: flex;
-    margin-top: 50px;
+    font-family: $font-helvetica;
+    font-weight: 400;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    z-index: 1;
+    .header-logo__link{
+      display: block;
+      background-color: #fff;
+      box-shadow: $box-shadow;
+      padding: 20px;
+      
+      img{
+        width: 100px;
+      }
+    }
 
     
-    .header__menu{
-        display: flex;
-        justify-content: space-between;
-        vertical-align: middle;
-        @media(max-width: 360px){
+    .header-menu{
+      display: flex;
+
+      .header-menu__wrapper{
+          margin-left: 75px;
+          width: 100%;
+      }
+
+        @include mobile{
             display: none;
         }
-        .header__logo{
-            width: 100px; ;
-            height: 100px;
-            background: #FFFFFF;
-            box-shadow: $box-shadow;
-            padding: 15px;
-        }
+        // .header__logo{
+        //     width: 100px; ;
+        //     height: 100px;
+        //     background: #FFFFFF;
+        //     box-shadow: $box-shadow;
+        //     padding: 15px;
+        // }
         .header__nav-bar{
             display: flex;
             padding: 18px 43px;
-            width: 1063px;
+            width: 100%;
             justify-content: space-between;
             background-color: #fff;
             z-index: 2;
