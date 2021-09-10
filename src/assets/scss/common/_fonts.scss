@@ -1,1 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap');
+// @import url(/assets/fonts/alexandra_zeferino_one.ttf);
+// @import url(/assets/fonts/BebasNeue-Bold.ttf);
+// @import url(/assets/fonts/BebasNeue-Book.ttf);
+// @import url(/assets/fonts/BebasNeue-Light.ttf);
+@include font(BebasNeue, 'BebasNeueBold', 700, normal);
+@include font(BebasNeue, 'BebasNeueRegular', 400, normal);
+@include font(BebasNeue, 'BebasNeueBook', 200, normal);
+
+@include font(Helvetica, 'HelveticaBold', 700, normal);
+@include font(Helvetica, 'HelveticaRegular', 400, normal);
+@include font(Helvetica, 'HelveticaLight', 300, normal);
+
+@include font(Alexandra, 'alexandra_zeferino_one', 400, normal);
+
+@include font(Rubik, 'Rubik-Light', 300, normal);
+
+
