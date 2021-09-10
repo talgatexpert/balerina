@@ -1,0 +1,141 @@
+.timetable-content{
+    margin-top: 216px;
+    background-image: url(/assets/images/timetable-bg.png);
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    h1{
+        margin-top: 53px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 80px;
+        text-transform: uppercase;
+        color: #083E5E;
+    }
+}
+.timetable-adress{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+
+    .timetable-adress__card{
+        width: 415px;
+        padding: 30px 20px;
+        box-shadow: $box-shadow;
+        border: 2px solid #ffffff;
+        background-color: #ffffff;
+        h3{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 34px;
+            line-height: 34px;
+            text-transform: uppercase;
+            color: #083E5E;
+        }
+        p{
+            color: #083E5E;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 14px;
+            text-transform: uppercase;
+        }
+
+    }
+    .timetable-adress__card:hover{
+        border: 2px solid #88BACD;
+        transition: all ease 0.2s;
+        box-sizing: border-box;
+    }
+}
+
+.timetable-table{
+    margin-top: 25px;
+    width: 100%;
+    border-spacing: 6px;
+    border-collapse: separate;
+    thead{
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+        th{
+            text-align: center;
+            background-color: #ffffff;
+            padding: 13px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 24px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #083E5E;
+            width: 178px;
+        }
+    }
+    tbody{
+        td{
+            padding: 14px;
+            width: 178px;
+        }
+        tr{
+            
+        }
+        .individual{
+            background: rgba(43, 43, 43, 0.02);
+            .time{
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 24px;
+                text-transform: uppercase;
+                color: #88BACD;
+                font-weight: 700;
+            }
+            .type{
+                margin-top: 40px;
+                font-family: $font-helvetica;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: #2B2B2B;
+            }
+        }
+        .prim{
+            color: #ffffff;
+            background: #88BACD;
+            .time{
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 24px;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+            .type{
+                margin-top: 40px;
+                font-family: $font-helvetica;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 20px;
+            }
+            
+        }
+        .other{
+            color: #ffffff;
+            background:#388DAC;;
+            .time{
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 24px;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+            .type{
+                margin-top: 40px;
+                font-family: $font-helvetica;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+   
+}

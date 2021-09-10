@@ -1,0 +1,93 @@
+.choreographer{
+    .choreographer-container{
+        box-shadow: none;
+    }
+    &-card__column{
+        padding: 0 10px ;
+    }
+    &-gallery{
+        h2{
+            font-size: 80px;
+            line-height: 80px; 
+            text-transform: uppercase; 
+            color: #083E5E;
+            @include mobile{
+                font-size: 50px;
+                line-height: 50px;
+            }
+        }
+        .choreographer-card{
+            box-shadow: $box-shadow;
+            padding: 20px 0;
+
+            &__img{
+            width: 418px;
+                img{
+                    height: 418px;
+                    object-fit: cover;
+                }
+            }
+
+            h3{
+                margin-top: 20px;
+                font-size: 34px;
+                line-height: 34px;
+                text-transform: uppercase;
+                color: #083E5E;
+                font-weight: 700;
+            }
+            &__link{
+                margin-top: 40px;
+                color: #083E5E;
+                font-size: 14px;
+                line-height: 20px;   
+                vertical-align: middle;
+                img{
+                    height: 20px;
+                    margin-left: 10px;
+                    display: inline-block;
+                    width: 20px;
+                }
+            }
+        }
+    }
+}
+
+.director{
+    margin-top: 120px;
+    h2{
+        font-weight: bold;
+        font-size: 80px;
+        line-height: 80px;
+        text-transform: uppercase;
+        color: #083E5E;
+        margin-bottom: 65px;
+        @include mobile{
+            font-size: 50px;
+            line-height: 50px;
+        }
+    }
+    .director-slider{
+        width: 304px;
+    }
+    .director-info{
+        margin-left: 130px;
+        @include mobile{
+            margin: 20px 0;
+        }
+        .bold{
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 20px;
+            color: #2B2B2B;
+        }
+        .light{
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 20px;
+            color: #2B2B2B;
+        }
+    }
+}
+
+
