@@ -1,0 +1,27 @@
+/* Helpers */
+@import "variables";
+@import "helpers/mixins";
+@import "helpers/media-query";
+
+/* Template */
+@import "common/fonts";
+@import "common/preloader";
+@import "common/buttons";
+@import "common/form";
+@import "template";
+@import "classes";
+
+/* Sections for all pages */
+@import "sections/header";
+@import "sections/footer";
+
+/* Pages */
+@import "pages/home";
+@import "pages/timetable";
+@import "pages/about";
+@import "pages/choreographer";
+/* Sliders */
+@import "common/sliders";
+
+/* Aos */
+//@import "libs/aos";
