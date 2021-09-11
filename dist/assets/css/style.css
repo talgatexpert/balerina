@@ -334,7 +334,7 @@ button {
   .header .header-logo__link {
     display: block;
     background-color: #fff;
-    box-shadow: 0px 0px 50px rgba(98, 209, 253, 0.15);
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
     padding: 20px; }
     .header .header-logo__link img {
       width: 100px; }
@@ -354,7 +354,7 @@ button {
       background-color: #fff;
       z-index: 2;
       height: 63px;
-      box-shadow: 0px 0px 50px rgba(98, 209, 253, 0.15); }
+      box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2); }
       .header .header-menu .header__nav-bar ul {
         display: flex; }
         .header .header-menu .header__nav-bar ul a {
@@ -377,7 +377,7 @@ button {
   .navigation__checkbox {
     display: none; }
   .navigation__button {
-    background-color: #BDC3C7;
+    background-color: #a6a9b6;
     height: 7rem;
     width: 7rem;
     position: fixed;
@@ -395,7 +395,7 @@ button {
     position: fixed;
     top: 6.5rem;
     right: 6.5rem;
-    background-image: radial-gradient(#8DA7BE, #80CED7);
+    background-image: radial-gradient(#892cdc, #892cdc);
     z-index: 1000;
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
   .navigation__nav {
@@ -430,7 +430,7 @@ button {
     transition: all .4s; }
   .navigation__link:hover, .navigation__link:active {
     background-position: 100%;
-    color: #8DA7BE;
+    color: #892cdc;
     transform: translateX(1rem); }
   .navigation__checkbox:checked ~ .navigation__background {
     transform: scale(80); }
@@ -443,7 +443,7 @@ button {
     .navigation__icon, .navigation__icon::before, .navigation__icon::after {
       width: 3rem;
       height: 3px;
-      background-color: #36393B;
+      background-color: #fff;
       display: inline-block; }
     .navigation__icon::before, .navigation__icon::after {
       content: "";
@@ -478,7 +478,7 @@ button {
       height: 103px;
       background-color: #fff;
       padding: 20px;
-      box-shadow: 0px 0px 50px rgba(98, 209, 253, 0.15); }
+      box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2); }
       @media screen and (max-width: 576px) {
         .footer .footer-content .footer-content__logo {
           margin-top: -40px; } }
@@ -593,7 +593,7 @@ button {
   margin-top: 80px; }
   .about-content .about-img {
     width: 413px;
-    box-shadow: 0px 0px 50px rgba(98, 209, 253, 0.15); }
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2); }
     .about-content .about-img img {
       width: 100%; }
   .about-content .about-content__text {
@@ -720,7 +720,7 @@ button {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  box-shadow: 0px 0px 50px rgba(98, 209, 253, 0.15);
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
   padding: 34px; }
   .choreographer-more h3 {
     font-weight: 400;
@@ -804,7 +804,7 @@ button {
   .contact li {
     border-bottom: 1px solid rgba(43, 43, 43, 0.05); }
   .contact .contact-content__info {
-    box-shadow: 0px 0px 50px rgba(98, 209, 253, 0.15); }
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2); }
     .contact .contact-content__info .contact-content__info_head {
       padding: 30px;
       font-size: 34px;
@@ -836,297 +836,6 @@ button {
         font-weight: 400; }
       .contact .contact-content__info .contact-content__info_geotag .contact-content__info_wh {
         margin-left: 40px; }
-
-.timetable-content {
-  margin-top: 216px;
-  background-image: url(/assets/images/timetable-bg.png);
-  background-position: right;
-  display: flex;
-  flex-direction: column; }
-  .timetable-content h1 {
-    margin-top: 53px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 80px;
-    line-height: 80px;
-    text-transform: uppercase;
-    color: #083E5E; }
-
-.timetable-adress {
-  margin-top: 25px;
-  display: flex;
-  justify-content: space-between; }
-  .timetable-adress .timetable-adress__card {
-    width: 415px;
-    padding: 30px 20px;
-    box-shadow: 0px 0px 50px rgba(98, 209, 253, 0.15);
-    border: 2px solid #ffffff;
-    background-color: #ffffff; }
-    .timetable-adress .timetable-adress__card h3 {
-      font-style: normal;
-      font-weight: 700;
-      font-size: 34px;
-      line-height: 34px;
-      text-transform: uppercase;
-      color: #083E5E; }
-    .timetable-adress .timetable-adress__card p {
-      color: #083E5E;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 14px;
-      text-transform: uppercase; }
-  .timetable-adress .timetable-adress__card:hover {
-    border: 2px solid #88BACD;
-    transition: all ease 0.2s;
-    box-sizing: border-box; }
-
-.timetable-table {
-  margin-top: 25px;
-  width: 100%;
-  border-spacing: 6px;
-  border-collapse: separate; }
-  .timetable-table thead {
-    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05); }
-    .timetable-table thead th {
-      text-align: center;
-      background-color: #ffffff;
-      padding: 13px;
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 24px;
-      text-align: center;
-      text-transform: uppercase;
-      color: #083E5E;
-      width: 178px; }
-  .timetable-table tbody td {
-    padding: 14px;
-    width: 178px; }
-  .timetable-table tbody .individual {
-    background: rgba(43, 43, 43, 0.02); }
-    .timetable-table tbody .individual .time {
-      font-weight: bold;
-      font-size: 24px;
-      line-height: 24px;
-      text-transform: uppercase;
-      color: #88BACD;
-      font-weight: 700; }
-    .timetable-table tbody .individual .type {
-      margin-top: 40px;
-      font-family: "Helvetica", sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 20px;
-      color: #2B2B2B; }
-  .timetable-table tbody .prim {
-    color: #ffffff;
-    background: #88BACD; }
-    .timetable-table tbody .prim .time {
-      font-weight: bold;
-      font-size: 24px;
-      line-height: 24px;
-      text-transform: uppercase;
-      font-weight: 700; }
-    .timetable-table tbody .prim .type {
-      margin-top: 40px;
-      font-family: "Helvetica", sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 20px; }
-  .timetable-table tbody .other {
-    color: #ffffff;
-    background: #388DAC; }
-    .timetable-table tbody .other .time {
-      font-weight: bold;
-      font-size: 24px;
-      line-height: 24px;
-      text-transform: uppercase;
-      font-weight: 700; }
-    .timetable-table tbody .other .type {
-      margin-top: 40px;
-      font-family: "Helvetica", sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 20px; }
-
-.about-school {
-  display: flex;
-  z-index: -2;
-  height: 650px;
-  margin-top: -150px; }
-  .about-school .container {
-    position: relative; }
-  .about-school .about-wrapper__text {
-    margin-top: 300px;
-    font-family: Bebas Neue; }
-  .about-school .wrapper__video {
-    width: 720px;
-    background-size: cover;
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    right: -30px; }
-
-.training .training-heading__title {
-  font-weight: 700;
-  font-size: 80px;
-  text-transform: uppercase;
-  color: #083E5E;
-  width: 60%; }
-
-.training table {
-  border-spacing: 20px;
-  border-collapse: separate; }
-  .training table td {
-    padding: 30px; }
-  .training table .blue {
-    background-color: #88BACD; }
-    .training table .blue .tranding-number {
-      color: #88BACD;
-      font-weight: bold;
-      font-size: 160px;
-      line-height: 180px;
-      text-transform: uppercase;
-      text-shadow: 2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff, -2px -2px 0 #ffffff, 2px 0px 0 #ffffff, 0px 2px 0 #ffffff, -2px 0px 0 #ffffff, 0px -2px 0 #ffffff; }
-    .training table .blue p:nth-child(2) {
-      font-size: 34px;
-      line-height: 41px;
-      text-transform: uppercase;
-      color: #FFFFFF; }
-    .training table .blue p:nth-child(3) {
-      font-weight: 300;
-      font-size: 14px;
-      line-height: 20px;
-      color: #FFFFFF; }
-  .training table .white {
-    background: rgba(43, 43, 43, 0.02); }
-    .training table .white .tranding-number {
-      color: white;
-      font-weight: bold;
-      font-size: 160px;
-      line-height: 180px;
-      text-transform: uppercase;
-      text-shadow: 2px 2px 0 #083E5E, 2px -2px 0 #083E5E, -2px 2px 0 #083E5E, -2px -2px 0 #083E5E, 2px 0px 0 #083E5E, 0px 2px 0 #083E5E, -2px 0px 0 #083E5E, 0px -2px 0 #083E5E; }
-    .training table .white p:nth-child(2) {
-      font-size: 34px;
-      line-height: 41px;
-      text-transform: uppercase;
-      color: #083E5E; }
-    .training table .white p:nth-child(3) {
-      font-weight: 300;
-      font-size: 14px;
-      line-height: 20px;
-      color: #083E5E; }
-
-.why-content {
-  margin-top: 133px; }
-  .why-content h2 {
-    font-weight: bold;
-    font-size: 80px;
-    line-height: 80px;
-    text-transform: uppercase;
-    color: #083E5E; }
-  .why-content p {
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 24px;
-    color: #2B2B2B; }
-  .why-content .why-conent__slider {
-    background: #88BACD;
-    padding: 30px;
-    width: 630px; }
-    .why-content .why-conent__slider p {
-      font-weight: 300;
-      font-size: 18px;
-      line-height: 24px;
-      color: #fff; }
-  .why-content .why-content__img {
-    width: 413px;
-    background-size: cover;
-    margin-left: 130px; }
-
-.adress h2 {
-  font-weight: bold;
-  font-size: 80px;
-  line-height: 80px;
-  text-transform: uppercase;
-  color: #083E5E; }
-
-.choreographer .choreographer-container {
-  box-shadow: none; }
-
-.choreographer-card__column {
-  padding: 0 10px; }
-
-.choreographer-gallery h2 {
-  font-size: 80px;
-  line-height: 80px;
-  text-transform: uppercase;
-  color: #083E5E; }
-  @media screen and (max-width: 576px) {
-    .choreographer-gallery h2 {
-      font-size: 50px;
-      line-height: 50px; } }
-
-.choreographer-gallery .choreographer-card {
-  box-shadow: 0px 0px 50px rgba(98, 209, 253, 0.15);
-  padding: 20px 0; }
-  .choreographer-gallery .choreographer-card__img {
-    width: 418px; }
-    .choreographer-gallery .choreographer-card__img img {
-      height: 418px;
-      object-fit: cover; }
-  .choreographer-gallery .choreographer-card h3 {
-    margin-top: 20px;
-    font-size: 34px;
-    line-height: 34px;
-    text-transform: uppercase;
-    color: #083E5E;
-    font-weight: 700; }
-  .choreographer-gallery .choreographer-card__link {
-    margin-top: 40px;
-    color: #083E5E;
-    font-size: 14px;
-    line-height: 20px;
-    vertical-align: middle; }
-    .choreographer-gallery .choreographer-card__link img {
-      height: 20px;
-      margin-left: 10px;
-      display: inline-block;
-      width: 20px; }
-
-.director {
-  margin-top: 120px; }
-  .director h2 {
-    font-weight: bold;
-    font-size: 80px;
-    line-height: 80px;
-    text-transform: uppercase;
-    color: #083E5E;
-    margin-bottom: 65px; }
-    @media screen and (max-width: 576px) {
-      .director h2 {
-        font-size: 50px;
-        line-height: 50px; } }
-  .director .director-slider {
-    width: 304px; }
-  .director .director-info {
-    margin-left: 130px; }
-    @media screen and (max-width: 576px) {
-      .director .director-info {
-        margin: 20px 0; } }
-    .director .director-info .bold {
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 20px;
-      color: #2B2B2B; }
-    .director .director-info .light {
-      font-weight: 300;
-      font-size: 14px;
-      line-height: 20px;
-      color: #2B2B2B; }
 
 /* Sliders */
 /* Aos */

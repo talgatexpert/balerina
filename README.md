@@ -2,11 +2,6 @@
 
 Устанавливаем node зависимости
 
-
-```javascript
-npm install -g gulp gulp-cli
-```
-
 ```javascript
 npm install
 ```
